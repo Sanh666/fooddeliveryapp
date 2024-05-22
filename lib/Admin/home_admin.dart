@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'add_food.dart';
+
 class HomeAdmin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,7 @@ class HomeAdmin extends StatelessWidget {
               // Navigate to the AddFoodItems screen
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => AddFoodItems()),
+                MaterialPageRoute(builder: (context) => AddFood()),
               );
             },
             child: Card(
@@ -34,7 +36,7 @@ class HomeAdmin extends StatelessWidget {
                         bottomLeft: Radius.circular(15),
                       ),
                       child: Image.network(
-                        'https://example.com/food-image.jpg', // Replace with your image URL
+                        'https://www.onceuponachef.com/images/2019/07/Big-Italian-Salad-1120x1449.jpg', // Replace with your image URL
                         width: 150,
                         height: 150,
                         fit: BoxFit.cover,
@@ -63,16 +65,4 @@ class HomeAdmin extends StatelessWidget {
   }
 }
 
-class AddFoodItems extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Add Food Items'),
-      ),
-      body: Center(
-        child: Text('Add Food Items Screen'),
-      ),
-    );
-  }
-}
+

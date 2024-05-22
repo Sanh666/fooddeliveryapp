@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:fooddelivery/signup.dart';
 
+import 'Admin/add_food.dart';
 import 'Admin/admin_login.dart';
+import 'Admin/home_admin.dart';
 import 'bottomnav.dart';
 
 void main() async {
